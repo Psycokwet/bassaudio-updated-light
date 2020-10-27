@@ -673,7 +673,7 @@ var dl = new DynamicLibrary(
 
 **--------------------------------**
 
-- 1.0.8-1.1
+- 1.0.8-1.1.0
   news:
   - spliting version with and without library files.
   - Correcting call to BASS_Encode_IsActive

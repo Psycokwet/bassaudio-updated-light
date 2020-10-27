@@ -1,0 +1,38 @@
+{
+  "name": "bassaudio-updated",
+  "version": "1.0.8-1.0.2",
+  "description": "un4seen Bass Audio Library based on ffi bindings",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Psycokwet/bassaudio-updated"
+  },
+  "keywords": [
+    "bass",
+    "audio",
+    "un4seen",
+    "mp3",
+    "icecast",
+    "shoutcast",
+    "shoutcast2",
+    "stream",
+    "encoder",
+    "audio encoder",
+    "audio mixer",
+    "mixer",
+    "media player",
+    "cross platform media player",
+    "bass library"
+  ],
+  "author": "Sophie Carboni <socarboni@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "ffi-napi": "^3.0.1",
+    "ref-array-napi": "^1.2.1",
+    "ref-napi": "^3.0.1",
+    "ref-struct-napi": "^1.1.1",
+    "replace-in-file": "^6.1.0"
+  }
+}

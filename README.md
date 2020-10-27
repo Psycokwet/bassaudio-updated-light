@@ -1,4 +1,5 @@
 **Announcement**
+
 In order to be used to its full potential, you need to use an encoder like lame to stream audio to a distant server.
 
 The necessaries dll ARE NOT included in this library. You can download them from the un4seen website. You need to add them either in the root folder, or specify the source folder when invoquing

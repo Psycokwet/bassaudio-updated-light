@@ -1,3 +1,7 @@
+**Disclaimer**
+
+This package has not been fully tested. Some features may not be fully functionning, if you encounter such a feature, please email me with you traces. I'm still working on it.
+
 **Announcement**
 
 In order to be used to its full potential, you need to use an encoder like lame to stream audio to a distant server.

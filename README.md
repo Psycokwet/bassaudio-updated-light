@@ -12,7 +12,11 @@ The necessaries dll ARE NOT included in this library. You can download them from
 
 ```javascript
 var basslib = new bass();
+```
+
 for example
+
+```javascript
 var basslib = new bass({ basePath: "libFolderName" });
 ```
 

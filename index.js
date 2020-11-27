@@ -537,10 +537,10 @@ function Bass(options) {
     bassenclibName = "libbassenc.so";
     basstagslibName = "libtags.so";
   }
-  basslibName = path.join(this.basePath, basslibName);
-  bassmixlibName = path.join(this.basePath, bassmixlibName);
-  bassenclibName = path.join(this.basePath, bassenclibName);
-  basstagslibName = path.join(this.basePath, basstagslibName);
+  basslibName = path.join(options.basePath, basslibName);
+  bassmixlibName = path.join(options.basePath, bassmixlibName);
+  bassenclibName = path.join(options.basePath, bassenclibName);
+  basstagslibName = path.join(options.basePath, basstagslibName);
   this.bassenclibName = bassenclibName;
   this.bassmixlibName = bassmixlibName;
   this.basstagslibName = basstagslibName;

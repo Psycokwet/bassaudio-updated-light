@@ -1,4 +1,4 @@
-[![npm version](https://img.shields.io/npm/v/axios.svg?style=flat-square)](https://www.npmjs.com/package/bassaudio-updated-light)
+[![npm version](https://img.shields.io/badge/npm-npm%406.14.8-green)](https://www.npmjs.com/package/bassaudio-updated-light)
 
 **Disclaimer**
 

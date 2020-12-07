@@ -1,5 +1,5 @@
 [![npm version](https://img.shields.io/badge/npm-npm%406.14.8-green)](https://www.npmjs.com/package/bassaudio-updated-light)
-[![install size](https://img.shields.io/badge/npm-npm%406.14.8-green)](https://badgen.net/bundlephobia/min/bassaudio-updated-light)
+[![install size](https://badgen.net/bundlephobia/min/bassaudio-updated-light)](https://bundlephobia.com/result?p=bassaudio-updated)
 
 **Disclaimer**
 

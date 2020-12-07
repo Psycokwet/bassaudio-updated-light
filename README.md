@@ -1,3 +1,5 @@
+[![npm version](https://img.shields.io/npm/v/axios.svg?style=flat-square)](https://www.npmjs.com/package/bassaudio-updated-light)
+
 **Disclaimer**
 
 This package has not been fully tested. Some features may not be fully functionning, if you encounter such a feature, please email me with your traces. I'm still working on it.

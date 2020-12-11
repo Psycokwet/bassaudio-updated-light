@@ -4,7 +4,8 @@
   "description": "un4seen Bass Audio Library based on ffi bindings",
   "main": "index.js",
   "scripts": {
-    "gitacp": "node g.js"
+    "gitacp": "node g.js",
+    "test": "node tests/main.js"
   },
   "repository": {
     "type": "git",

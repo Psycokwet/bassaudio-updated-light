@@ -1,2 +1,2 @@
 console.log("Hello");
-return -1;
+process.exit(-1);

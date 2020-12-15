@@ -2,13 +2,17 @@ language: node_js
 os:
   - linux
   - osx
-  - windows
+  # - windows
 node_js:
-  - 10
-  - 12
-  - 14
+  # - 10
+  # - 12
+  # - 14
+  - "stable"
+before_install:
+  - npm update
+install: npm install
 email:
   on_failure: change
   on_success: never
-after_success:
-  - npm run coveralls
+script: npm test
+after_success: npm run coverage

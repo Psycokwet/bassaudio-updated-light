@@ -24,7 +24,7 @@ Tests results :
 
 Documentation :
 
-[![Examples](https://img.shields.io/static/v1?label=info&message=examples&color=yellow)](https://github.com/Psycokwet/bassaudio-updated-light/tree/master/examples)
+[![Examples](https://img.shields.io/static/v1?label=info&message=examples&color=yellow)](https://github.com/Psycokwet/bassaudio-updated-light/tree/master/examples/EXAMPLES.md)
 [![Official documentation](https://img.shields.io/static/v1?label=official&message=un4seen&color=blue)](https://www.un4seen.com/)
 
 Others :

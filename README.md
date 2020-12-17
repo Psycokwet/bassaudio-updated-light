@@ -3,6 +3,7 @@
   A simple bass library wrapper, maintained and tested.
   To use, your must download the base library of bass from [un4seen](http://www.un4seen.com) website.
   To uses tag, encoder, or mix add on, you must add it to your project.
+  For a fast startup, with all the bass files included, check out [bassaudio-updated](https://www.npmjs.com/package/bassaudio-updated)
 </div>
 
 <hr />

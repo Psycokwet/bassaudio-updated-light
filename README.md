@@ -1,9 +1,25 @@
-[![npm version](https://img.shields.io/badge/npm-npm%406.14.8-green)](https://www.npmjs.com/package/bassaudio-updated-light "Last npm version checked")
+Tested on
+
+[![macos-latest](https://img.shields.io/static/v1?label=macos&message=latest&color=ff69b4)]("macos-latest")
+[![windows-latest](https://img.shields.io/static/v1?label=windows&message=latest&color=blue)]("windows-latest")
+[![ubuntu-latest](https://img.shields.io/static/v1?label=ubuntu&message=latest&color=blueviolet)]("ubuntu-latest")
+
+with
+
+[![npm version](https://img.shields.io/static/v1?label=Node.js&message=10.x&color=green)](https://www.npmjs.com/package/bassaudio-updated-light "Last npm version checked")
+[![npm version](https://img.shields.io/static/v1?label=Node.js&message=12.x&color=green)](https://www.npmjs.com/package/bassaudio-updated-light "Last npm version checked")
+[![npm version](https://img.shields.io/static/v1?label=Node.js&message=14.x&color=green)](https://www.npmjs.com/package/bassaudio-updated-light "Last npm version checked")
+
+Tests results :
+
+[![github build status](https://github.com/Psycokwet/bassaudio-updated-light/workflows/build/badge.svg)](https://github.com/Psycokwet/bassaudio-updated-light "Build status")
+![Coverage Status](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/Psycokwet/277c7acb9222d5762a31958b394afb2f/raw/bassaudio-updated-light-coverage.json)
+
+Others :
+
 [![install size](https://badgen.net/bundlephobia/min/bassaudio-updated-light)](https://bundlephobia.com/result?p=bassaudio-updated-light)
 [![npm downloads](https://img.shields.io/npm/dm/bassaudio-updated-light)](https://www.npmjs.com/package/bassaudio-updated-light "Monthly downloads")
 [![npm downloads](https://img.shields.io/npm/dt/bassaudio-updated-light)](https://www.npmjs.com/package/bassaudio-updated-light "All time downloads")
-[![travis build status](https://api.travis-ci.com/Psycokwet/bassaudio-updated-light.svg)](https://travis-ci.com/github/Psycokwet/bassaudio-updated-light "Build status")
-[![Coverage Status](https://coveralls.io/repos/github/Psycokwet/bassaudio-updated-light/badge.svg?branch=master)](https://coveralls.io/github/Psycokwet/bassaudio-updated-light?branch=master)
 
 **Disclaimer**
 

@@ -1,9 +1,9 @@
 <div align="center">
   <h1>Bassaudio-updated-light</h1>
   A simple bass library wrapper, maintained and tested.
-  To use, your must download the base library of bass from [un4seen](http://www.un4seen.com) website.
+  To use, your must download the base library of bass from <a title="un4seen" href="http://www.un4seen.com">un4seen</a> website.
   To uses tag, encoder, or mix add on, you must add it to your project.
-  For a fast startup, with all the bass files included, check out [bassaudio-updated](https://www.npmjs.com/package/bassaudio-updated)
+  For a fast startup, with all the bass files included, check out <a title="bassaudio-updated" href="https://www.npmjs.com/package/bassaudio-updated">bassaudio-updated</a>
 </div>
 
 <hr />

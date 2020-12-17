@@ -1,6 +1,8 @@
 <div align="center">
   <h1>Bassaudio-updated-light</h1>
   A simple bass library wrapper, maintained and tested.
+  To use, your must download the base library of bass from [un4seen](http://www.un4seen.com) website.
+  To uses tag, encoder, or mix add on, you must add it to your project.
 </div>
 
 <hr />

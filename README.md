@@ -5,7 +5,6 @@
   To uses tag, encoder, or mix add on, you must add it to your project.
   For a fast startup, with all the bass files included, check out <a title="bassaudio-updated" href="https://www.npmjs.com/package/bassaudio-updated">bassaudio-updated</a>
 </div>
-
 <hr />
 
 Tested on
@@ -14,7 +13,7 @@ Tested on
 [![windows-latest](https://img.shields.io/static/v1?label=windows&message=latest&color=blue)]("windows-latest")
 [![ubuntu-latest](https://img.shields.io/static/v1?label=ubuntu&message=latest&color=blueviolet)]("ubuntu-latest")
 
-with
+With
 
 [![npm version](https://img.shields.io/static/v1?label=Node.js&message=10.x&color=green)](https://www.npmjs.com/package/bassaudio-updated-light "Last npm version checked")
 [![npm version](https://img.shields.io/static/v1?label=Node.js&message=12.x&color=green)](https://www.npmjs.com/package/bassaudio-updated-light "Last npm version checked")
@@ -23,27 +22,31 @@ with
 Tests results :
 
 [![github build status](https://github.com/Psycokwet/bassaudio-updated-light/workflows/build/badge.svg)](https://github.com/Psycokwet/bassaudio-updated-light "Build status")
-![Coverage Status](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/Psycokwet/277c7acb9222d5762a31958b394afb2f/raw/bassaudio-updated-light-coverage.json)
+[![Coverage Status](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/Psycokwet/277c7acb9222d5762a31958b394afb2f/raw/bassaudio-updated-light-coverage.json)](https://github.com/Psycokwet/bassaudio-updated-light/tree/master/coverage)
 
 Documentation :
 
-[![Examples](https://img.shields.io/static/v1?label=info&message=examples&color=yellow)](https://github.com/Psycokwet/bassaudio-updated-light/tree/master/examples/EXAMPLES.md)
+[![Examples](https://img.shields.io/static/v1?label=wrapper&message=examples&color=brown)](https://github.com/Psycokwet/bassaudio-updated-light/tree/master/examples/EXAMPLES.md)
+[![partials examples](https://img.shields.io/static/v1?label=wrapper&message=partials%20examples&color=brown)](#partials-examples)
+[![features](https://img.shields.io/static/v1?label=wrapper&message=features&color=brown)](https://github.com/Psycokwet/bassaudio-updated-light/blob/master/documentation/covered-fun.md)
+[![structs](https://img.shields.io/static/v1?label=wrapper&message=structs&color=brown)](https://github.com/Psycokwet/bassaudio-updated-light/blob/master/documentation/covered-structs.md)
+[![callbacks](https://img.shields.io/static/v1?label=wrapper&message=callbacks&color=brown)](https://github.com/Psycokwet/bassaudio-updated-light/blob/master/documentation/covered-callbacks.md)
 [![Official documentation](https://img.shields.io/static/v1?label=official&message=un4seen&color=blue)](https://www.un4seen.com/)
 
 Others :
 
-[![install size](https://badgen.net/bundlephobia/min/bassaudio-updated-light)](https://bundlephobia.com/result?p=bassaudio-updated-light)
+[![install size](https://badgen.net/bundlephobia/min/bassaudio-updated-light)](https://bundlephobia.com/result?p=bassaudio-updated)
 [![npm downloads](https://img.shields.io/npm/dm/bassaudio-updated-light)](https://www.npmjs.com/package/bassaudio-updated-light "Monthly downloads")
 [![npm downloads](https://img.shields.io/npm/dt/bassaudio-updated-light)](https://www.npmjs.com/package/bassaudio-updated-light "All time downloads")
 [![MIT License](https://img.shields.io/static/v1?label=licence&message=MIT&color=green)](https://github.com//Psycokwet/bassaudio-updated-light/tree/master/LICENSE "Licence")
 
-**Disclaimer**
+# Disclaimer
 
 This package has not been fully tested. Some features may not be fully functionning, if you encounter such a feature, please email me with your traces. I'm still working on it.
 
 Also, I'm not in anyway linked to the bass library. I just like their lib and want it to be accessible to the world of node.
 
-**Announcement**
+# Announcement
 
 In order to be used to its full potential, you need to use an encoder like lame to stream audio to a distant server.
 
@@ -63,19 +66,23 @@ You need the original bass library, and the plugins you want to use, in the same
 
 If you want the necessaries binaries library included, please, check out [bassaudio-updated](https://www.npmjs.com/package/bassaudio-updated)
 
-**Un4Seen Bass Audio Library Wrapper**
+**Do you need more features?**
+
+There is two way to use functions that I did not include in this wrapper. Either you send me a mail asking me to officially add it, which I will, either you "patch it" while you use the wrapper as explained [here](#wrapper-parameters)
+
+# Un4Seen Bass Audio Library Wrapper
 
 [Bass Audio library](http://www.un4seen.com) is the best audio library to play, edit, convert, stream etc.
-this wrapper wraps most of the "audio playback" features using [ffi-napi](https://www.npmjs.com/package/ffi-napi) , [ref-napi](https://www.npmjs.com/package/ref-napi) , [ref-struct-napi](https://www.npmjs.com/package/ref-struct-napi) .
+this wrapper wraps most of the "audio playback" features using [ffi-napi](https://www.npmjs.com/package/ffi-napi), [ref-napi](https://www.npmjs.com/package/ref-napi), [ref-struct-di](https://www.npmjs.com/package/ref-struct-di), [ref-array-di](https://www.npmjs.com/package/ref-array-di).
+It uses [os](https://www.npmjs.com/package/os) to determines which dynamic library are needed.
 
-ffi-napi enables to call c library methods, properties , callbacks etc.
+ffi-napi enables to call c library methods, properties, callbacks etc.
 
-**Compatible with?**
+# Compatible with?
 
-Originally tested on MacosX El capitan, windows 32 and 64 bits, ubuntu 14+, raspberrypi 2-3 (armv7), not tested on armv6 but its easy to test, just install and see..
-related platform binaries can be downloaded from bass web page..
+Included binaries library files for Windows 64/32bits, Linux 64/32bits, and macOs. Not fully tested yet, so report any encountered issues please.
 
-**Documentation**
+# Documentation
 
 Bass documentation is available here :
 http://www.un4seen.com/doc/
@@ -91,172 +98,77 @@ Original library files, bass community, licensing, other apis and more is availa
 
 You can see more code examples from the wrapper original creator, [Serkanp](https://bitbucket.org/serkanp/bassaudio/src/master/), in its git repositories linked here.
 
-**Features:**
-
-- BASS_Init
-
-- BASS_GetVersion
-
-- BASS_StreamCreate
-
-- BASS_StreamCreateFile
-
-- BASS_StreamCreateURL
-
-- BASS_StreamFree
-
-- BASS_ChannelPlay
-
-- BASS_ChannelStop
-
-- BASS_ChannelPause
-
-- BASS_ChannelGetPosition
-
-- BASS_ChannelSetPosition
-
-- BASS_ChannelGetLength
-
-- BASS_ChannelBytes2Seconds
-
-- BASS_ChannelSeconds2Bytes
-
-- BASS_ChannelGetLevel
-
-- BASS_ChannelRemoveSync
-
-- BASS_ChannelIsActive
-
-- BASS_ChannelSetAttribute
-
-- BASS_ChannelGetAttribute
-
-- BASS_ChannelSetSync
-
-- BASS_ChannelSlideAttribute
-
-- BASS_ChannelIsSliding
-
-- BASS_ChannelGetDevice
-
-- BASS_ChannelSetDevice
-
-- BASS_StreamFree
-
-- BASS_SetDevice
-
-- BASS_SetVolume
-
-- BASS_Start
-
-- BASS_Stop
-
-- BASS_Pause
-
-- BASS_GetInfo
-
-- BASS_ErrorGetCode
-
-- BASS_Free
-
-- BASS_GetCPU
-
-- BASS_GetDevice
-
-- BASS_GetDeviceInfo
-
-- BASS_ChannelGetTags
-
-- BASS_Mixer_StreamCreate
-
-- BASS_Mixer_StreamAddChannel
-
-- BASS_Mixer_ChannelGetLevel
-
-- BASS_Mixer_ChannelGetMixer
-
-- BASS_Mixer_ChannelGetPosition
-
-- BASS_Mixer_ChannelRemove
-
-- BASS_Mixer_ChannelRemoveSync
-
-- BASS_Mixer_ChannelSetPosition
-
-- BASS_Mixer_ChannelSetSync
-
-- BASS_Encode_Start
-
-- BASS_Encode_IsActive
-
-- BASS_Encode_SetNotify
-
-- BASS_Encode_SetPaused
-
-- BASS_Encode_Stop
-
-- BASS_Encode_CastInit
-
-- BASS_Encode_CastGetStats
-
-- BASS_Encode_CastSetTitle
-
-- BASS_Split_StreamCreate
-
-- BASS_Split_StreamGetAvailable
-
-- BASS_Split_StreamGetSource
-
-- BASS_Split_StreamGetSplits
-
-- BASS_Split_StreamReset
-
-- BASS_Split_StreamResetEx
-
-- BASS_RecordFree
-
-- BASS_RecordGetDevice
-
-- BASS_RecordGetDeviceInfo
-
-- BASS_RecordGetInfo
-
-- BASS_RecordGetInput
-
-- BASS_RecordGetInputName
-
-- BASS_RecordInit
-
-- BASS_RecordSetDevice
-
-- BASS_RecordSetInput
-
-- BASS_RecordStart
-
-From Tags add-ons :
-
-- TAGS_GetVersion
-
-- TAGS_Read
-
-- TAGS_ReadEx
-
-- TAGS_SetUTF8
-
-- TAGS_GetLastErrorDesc
-
-**Extra:**
-
-SYNCPROC also implemented
-
-**Installation**
-
-Install with npm :
-`npm install bassaudio-updated-light`
-
-**Examples**
-
-**basic capture and play microphone**
+# Partials examples
+
+- Divers
+  - [Wrapper parameters](#wrapper-parameters)
+  - [basic capture and play microphone](#basic-capture-and-play-microphone)
+  - [basic load and play file](#basic-load-and-play-file)
+  - [Get Artist](#get-Artist)
+  - [Get Duration](#get-Durations)
+  - [Get Duration Example2](#get-duration-example2)
+  - [Get Volume of channel](#get-volume-of-channel)
+  - [Set Volume](#Set-Volume)
+  - [Get current Position of playback](#Get-current-Position-of-playback)
+  - [Set Position](#Set-Position)
+  - [Is channel playing?](#Is-channel-playing?)
+  - [sliding](#sliding)
+  - [callback](#callback)
+  - [Vumeter](#Vumeter)
+  - [close the file](#close-the-file)
+  - [change sound card](#change-sound-card)
+  - [Info of a channel](#Info-of-a-channel)
+  - [Info of a device](#Info-of-a-device)
+  - [Free the memory from bass](#Free-the-memory-from-bass)
+- [MIXER FEATURES](#MIXER-FEATURES)
+  - [Enable Mixer](#Enable-Mixer)
+  - [Mixer is Enabled?](#Mixer-is-Enabled?)
+  - [Get current Position of mixer playback](#Get-current-Position-of-mixer-playback)
+- [ENCODER FEATURES](#ENCODER-FEATURES)
+  - [Init encoder](#Init-encoder)
+  - [get notification from encoder server](#get-notification-from-encoder-server)
+  - [mono speaker output](#mono-speaker-output)
+  - [splitting channels](#splitting-channels)
+
+### Wrapper parameters
+
+```javascript
+// There is a diversity of parameter accepted by this wrapper, here is a full list of them :
+
+var basslib = getBass({
+  silent: true, //there is a few console log that may appear to indicate that everything is going smoothly, if you don't want to see it, you can set it to silent
+  generatedFfiFunDeclaration: {
+    bass: {
+      // addon id
+      ffiFunDeclaration: {
+        BASS_ORIGINAL_FUN_NAME: ["bool", []],
+      },
+    },
+    webm: {
+      // addon id
+      ffiFunDeclaration: {
+        BASS_ORIGINAL_FUN_NAME: [
+          // Original name of the bass function
+          "int", // return type of the desired function
+          ["string", "float", "double", "long", "pointer", "bool"], // Arguments types
+        ],
+      },
+      path: "path/to/lib/file.dylib/dll/so", // A path must be given to the added addon if it's not one already covered by the wrapper. If it is an addon covered, the path would be ignored
+    },
+  },
+});
+```
+
+Arguments types : You must choose the most relevants types for each arguments. You can see a list of correspondances [here](https://github.com/Psycokwet/bassaudio-updated-light/blob/master/documentation/identified-types-correspondances.md).
+
+Addon id :
+Identification of the addon, two choices :
+
+- Either it's one of the covered ones (bass, tags, encoder, and mixer are already covered) so, by using one of those id, you will add covering for new fun, without losing the ones already managed by the wrapper.
+
+- Either it's a new addon, for which you can put the name you want. You can put as much diffents addons as you want. Some may have issues, that I did not investigates since I did not test this functionnality with every addon offered with bass, so, don't hesitate to contact me if needed. The name you choose will generate a [Name]Enable() function, as well as a Enabled[Name]\() function, as for the ones already covered to activate an addon, and check if it is activated.
+
+### basic capture and play microphone
 
 ```javascript
 var bass = require("bassaudio-updated-light");
@@ -320,7 +232,7 @@ if (!success) {
 }
 ```
 
-**basic load and play file**
+### basic load and play file
 
 ```javascript
 var bass = require("bassaudio-updated-light");
@@ -330,7 +242,7 @@ var basslib = new bass();
 var cards = basslib.getDevices();
 console.log("total found sound cards:" + cards.length);
 //lets print first sound card's info, find out more inside source code..
-//first item in array '[0]' is "no sound" , then use the item [1]
+//first item in array '[0]' is "no sound", then use the item [1]
 //you will see that card isInitialized will be false, because we did not init it yet..
 var card = cards[1];
 console.log(
@@ -345,7 +257,7 @@ console.log(
     card.typeSpeakers
 );
 
-// [device],[freq],[flags] , -1 is default sound card
+// [device],[freq],[flags], -1 is default sound card
 var result = basslib.BASS_Init(
   -1,
   44100,
@@ -364,14 +276,14 @@ if (basslib.BASS_ErrorGetCode() != basslib.BASS_ErrorCode.BASS_OK) {
 }
 
 //lets play
-//channel,restart   , returns  (also there are stop , pause commands)
+//channel, restart, returns  (also there are stop, pause commands)
 var success = basslib.BASS_ChannelPlay(chan, -1);
 if (!success) {
   console.log("error playing file:" + basslib.BASS_ErrorGetCode());
 }
 ```
 
-**Get Artist**
+### Get Artist
 
 ```javascript
 // get artist or other meta data thanks to the Tags add-on
@@ -397,7 +309,7 @@ var artist = basslib.TAGS_Read(
 );
 ```
 
-**Get Duration**
+### Get Duration
 
 ```javascript
 //get the duration, bass returns the total bytes of the channel pointer, then we must convert it to seconds :)
@@ -408,7 +320,7 @@ var durationInSeconds = basslib.BASS_ChannelBytes2Seconds(
 );
 ```
 
-**Get Duration Example2**
+### Get Duration Example2
 
 ```javascript
 //if stream is active (playing), then get position and duration..
@@ -432,7 +344,7 @@ setInterval(function () {
 }, 500);
 ```
 
-**Get Volume of channel**
+### Get Volume of channel
 
 ```javascript
 var ref = require("ref");
@@ -448,7 +360,7 @@ var result = basslib.BASS_ChannelGetAttribute(
 console.log(ref.deref(volume));
 ```
 
-**Set Volume**
+### Set Volume
 
 ```javascript
 //lets set to 0.3
@@ -459,7 +371,7 @@ basslib.BASS_ChannelSetAttribute(
 );
 ```
 
-**Get current Position of playback**
+### Get current Position of playback
 
 ```javascript
 var positionInBytes = basslib.BASS_ChannelGetPosition(chan, 0);
@@ -467,7 +379,7 @@ var positionInBytes = basslib.BASS_ChannelGetPosition(chan, 0);
 var position = basslib.BASS_ChannelBytes2Seconds(chan, positionInBytes);
 ```
 
-**Set Position**
+### Set Position
 
 ```javascript
 //first get the byte position of desired seconds (ex:to last 10 seconds
@@ -478,7 +390,7 @@ var Last10SecondsBytePos = basslib.BASS_ChannelSeconds2Bytes(
 basslib.BASS_ChannelSetPosition(chan, Last10SecondsBytePos);
 ```
 
-**Is channel is playing?**
+### Is channel playing?
 
 ```javascript
 var result = basslib.BASS_ChannelIsActive(chan);
@@ -487,7 +399,7 @@ if (result == basslib.BASS_ChannelIsActiveAttribs.BASS_ACTIVE_PLAYING) {
 }
 ```
 
-**sliding**
+### sliding
 
 ```javascript
 //Lets slide volume to 0 in 3 seconds (3000 milliseconds)
@@ -499,7 +411,7 @@ basslib.BASS_ChannelSlideAttribute(
 );
 ```
 
-**callback**
+### callback
 
 ```javascript
 //lets make a callback when position reaches to 20. seconds.
@@ -528,7 +440,7 @@ var procTOENDID = basslib.BASS_ChannelSetSync(
 );
 ```
 
-**vumeter**
+### Vumeter
 
 ```javascript
 //lets get vumeter :)
@@ -538,7 +450,7 @@ var rightlevel = basslib.toFloat64(levels)[0];
 var leftlevel = basslib.toFloat64(levels)[1];
 ```
 
-**close the file**
+### close the file
 
 ```javascript
 if (
@@ -555,7 +467,7 @@ if (!result) {
 }
 ```
 
-**change sound card**
+### change sound card
 
 ```javascript
 //first check if this sound card is initialized
@@ -580,7 +492,7 @@ if (!success) {
 }
 ```
 
-**Info of a channel**
+### Info of a channel
 
 ```javascript
 var info = basslib.BASS_ChannelGetInfo(chan);
@@ -592,7 +504,7 @@ console.log(
 //other infos are: freq,chans,flags,ctype,origres,plugin,sample,filename
 ```
 
-**Info of a device**
+### Info of a device
 
 ```javascript
 var info = basslib.getInfo();
@@ -601,29 +513,29 @@ console.log("minimum buffer:" + info.minbuf);
 console.log("latency:" + info.latency);
 ```
 
-**Free the memory from bass**
+### Free the memory from bass
 
 ```javascript
 basslib.BASS_Free();
 ```
 
-**MIXER FEATURES**
+## MIXER FEATURES
 
-**Enable Mixer**
+### Enable Mixer
 
 ```javascript
 //before using mixer, first enable it. and put the required component to root folder.
 basslib.EnableMixer(true);
 ```
 
-**Mixer is Enabled?**
+### Mixer is Enabled?
 
 ```javascript
 //before using mixer, first enable it. and put the required component to root folder.
 console.log(basslib.MixerEnabled());
 ```
 
-**Create mixer stream**
+### Create mixer stream
 
 ```javascript
 basslib.EnableMixer(true);
@@ -659,7 +571,7 @@ var ok2 = basslib.BASS_Mixer_StreamAddChannel(
 basslib.BASS_ChannelPlay(mixer, 0);
 ```
 
-**Get current Position of mixer playback**
+### Get current Position of mixer playback
 
 ```javascript
 var positionInBytes = basslib.BASS_Mixer_ChannelGetPosition(chan, 0);
@@ -667,7 +579,7 @@ var positionInBytes = basslib.BASS_Mixer_ChannelGetPosition(chan, 0);
 var position = basslib.BASS_ChannelBytes2Seconds(chan, positionInBytes);
 ```
 
-**ENCODER FEATURES**
+## ENCODER FEATURES
 
 you can directly encode and send output to [shoutcast](http://www.shoutcast.com) and [icecast](http://www.icecast.org) servers
 
@@ -675,7 +587,7 @@ use mixer as a trick, because if the channel freed or added new channel, the enc
 
 add channels to mixer every time, and add mixer channel to encoder. so the encoder never stops..
 
-**Init encoder**
+### Init encoder
 
 ```javascript
 basslib.EnableMixer(true);
@@ -722,7 +634,7 @@ var result = basslib.BASS_Encode_CastInit(
 basslib.BASS_ChannelPlay(mixer, 0);
 ```
 
-**get notification from encoder server**
+### get notification from encoder server
 
 ```javascript
 var result=basslib.BASS_Encode_SetNotify(enc_chan,function(handle,status,user){
@@ -731,7 +643,7 @@ var result=basslib.BASS_Encode_SetNotify(enc_chan,function(handle,status,user){
 });
 ```
 
-**mono speaker output**
+### mono speaker output
 
 ```javascript
 //lets say if you have 5.1 speaker and want to use each output stereo or mono
@@ -776,7 +688,7 @@ var chan1 = basslib.BASS_StreamCreateFile(
   basslib.BASSFlags.BASS_STREAM_DECODE
 );
 
-//if your file is stereo , you have to downmix to mono, else you cannot get it mono output to only 1 speaker.
+//if your file is stereo, you have to downmix to mono, else you cannot get it mono output to only 1 speaker.
 var ok1 = basslib.BASS_Mixer_StreamAddChannel(
   mixer,
   chan1,
@@ -790,7 +702,7 @@ console.log("ok1:", ok1, " error code:", basslib.BASS_ErrorGetCode());
 setInterval(() => {}, 1000);
 ```
 
-**splitting channels**
+### splitting channels
 
 ```javascript
 //if you want to add a mixer to another mixer, it is not possible/supported
@@ -805,50 +717,23 @@ var avail1 = basslib.BASS_Split_StreamGetAvailable(splitChan);
 var avail2 = basslib.BASS_Split_StreamGetAvailable(mixer);
 ```
 
-**INFO**
-i only added methods, properties what i needed.. add yours to the code or send me mail..
+# UPDATE LOG
 
-**IMPORTANT**
+**--------------2.X.X------------------**
 
-\***\*Below modifications are now handled internally. You shouldn't need to do these manually. However, if you do, you know where to find them.\*\***
+- 2.0.0
 
-2017-02-10
+  Complete rebuilding of the wrapper to be easier to test, to evolve, and to suit the needs of everyone.
 
-please modify node_modules/ffi/lib/callback.js if you are using callbacks.
-ffi garbage collector removes callbacks after 10 seconds. with this modification, callbacks stays on memory
+  - Adding examples
+  - Adding tests
+  - Adding coverage
+  - Adding documentation
+  - Leaving out the features lists of Readme to allow to automatise it's content
+  - Changing dependencies to [ref-struct-di](https://www.npmjs.com/package/ref-struct-di), [ref-array-di](https://www.npmjs.com/package/ref-array-di) because ref-napi version that can differe in ref-array-napi and ref-struct-napi from ffi-napi.
+  - Allowing to load non covered addons by adding the proper parameter in the constructor call of the lib. See how to do so in the test [here](https://github.com/Psycokwet/bassaudio-updated-light/blob/master/tests/addFun.test.js). Adding fun works on any platform, but, loading new addon does not work on mac yet. Some addon may not load easily due to other issues that I did not investigate enough, but I believe there is a way to by pass thoses loading issues.
 
-at line 81 , before return, add;
-
-```javascript
-Object.defineProperty(func, "_func", { value: callback });
-```
-
-**--------------------------------**
-
-2017-01-31
-
-please modify node_modules/ffi/lib/library.js if you are using linux os and if you are using addons.
-ffi loads bass into instance, not as global instance.. so the addons could not find main bass on memory.
-this fixes that issue.. (on windows and macos, it works without this modification)
-
-find
-
-```javascript
-var dl = new DynamicLibrary(libfile || null, RTLD_NOW);
-```
-
-change it to
-
-```javascript
-var dl = new DynamicLibrary(
-  libfile || null,
-  RTLD_NOW | DynamicLibrary.FLAGS.RTLD_GLOBAL
-);
-```
-
-**UPDATE LOG**
-
-**--------------------------------**
+**--------------1.X.X------------------**
 
 - 1.0.8-1.3.5
 
@@ -918,9 +803,7 @@ var dl = new DynamicLibrary(
     RiccardoBiemmi repo :
     https://github.com/RiccardoBiemmi/bassaudiolibrary
 
-**BEFORE FORK-UPDATE LOG**
-
-**--------------------------------**
+**-----BEFORE FORK-UPDATE LOG-----**
 
 - 1.0.8
 

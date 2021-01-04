@@ -1,4 +1,5 @@
 function getBass(options) {
+  if (!options) options = {};
   var bass = require("../");
 
   const os = require("os");

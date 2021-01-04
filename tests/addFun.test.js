@@ -18,27 +18,27 @@ var basslib = getBass({
           ["string", "int", "int", "pointer", "pointer", "int"],
         ],
       },
-      path.join(__dirname, "basswebm24-osx", "libbasswebm.dylib"),
-      path.join(__dirname, "basswebm24", "basswebm.dll"),
-      path.join(__dirname, "basswebm24", "x64", "basswebm.dll"),
-      path.join(__dirname, "basswebm24-linux", "libbasswebm.so"),
-      path.join(__dirname, "basswebm24-linux", "x64", "libbasswebm.so")
+      path.join(__dirname, "lib", "macOs", "libbasswebm.dylib"),
+      path.join(__dirname, "lib", "win32", "basswebm.dll"),
+      path.join(__dirname, "lib", "win64", "basswebm.dll"),
+      path.join(__dirname, "lib", "linux32", "libbasswebm.so"),
+      path.join(__dirname, "lib", "linux64", "libbasswebm.so")
     ),
   },
 });
 
-const os = require("os");
-if (os.platform() !== "darwin") {
-  basslib.EnableWebm(true);
+// const os = require("os");
+// if (os.platform() !== "darwin") { // same folder, no problem on mac
+basslib.EnableWebm(true);
 
-  test("test full new lib file linking", () => {
-    expect(basslib.BASS_WEBM_StreamCreateURL()).toBe(0);
-  });
+test("test full new lib file linking", () => {
+  expect(basslib.BASS_WEBM_StreamCreateURL()).toBe(0);
+});
 
-  test("Is bass well loaded?", () => {
-    expect(basslib.BASS_GetVersion()).toBe(33820416);
-  });
-}
+test("Is bass well loaded?", () => {
+  expect(basslib.BASS_GetVersion()).toBe(33820416);
+});
+// }
 
 test("test add a single fun to base lib bass", () => {
   expect(basslib.BASS_IsStarted()).toBe(false);

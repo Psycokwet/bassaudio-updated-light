@@ -33,7 +33,12 @@ function getBass(options) {
   }
 
   const basePath = path.join(
-    path.join(process.cwd(), "tests", "lib", getPlatformDependencies())
+    path.join(
+      path.resolve(__dirname, ".."),
+      "tests",
+      "lib",
+      getPlatformDependencies()
+    )
   );
 
   options.basePath = basePath;

@@ -104,28 +104,28 @@ You can see more code examples from the wrapper original creator, [Serkanp](http
   - [Wrapper parameters](#wrapper-parameters)
   - [basic capture and play microphone](#basic-capture-and-play-microphone)
   - [basic load and play file](#basic-load-and-play-file)
-  - [Get Artist](#get-Artist)
-  - [Get Duration](#get-Durations)
+  - [Get Artist](#get-artist)
+  - [Get Duration](#get-durations)
   - [Get Duration Example2](#get-duration-example2)
   - [Get Volume of channel](#get-volume-of-channel)
-  - [Set Volume](#Set-Volume)
-  - [Get current Position of playback](#Get-current-Position-of-playback)
-  - [Set Position](#Set-Position)
-  - [Is channel playing?](#Is-channel-playing?)
+  - [Set Volume](#set-volume)
+  - [Get current Position of playback](#get-current-position-of-playback)
+  - [Set Position](#set-position)
+  - [Is channel playing?](#is-channel-playing?)
   - [sliding](#sliding)
   - [callback](#callback)
-  - [Vumeter](#Vumeter)
+  - [Vumeter](#vumeter)
   - [close the file](#close-the-file)
   - [change sound card](#change-sound-card)
-  - [Info of a channel](#Info-of-a-channel)
-  - [Info of a device](#Info-of-a-device)
-  - [Free the memory from bass](#Free-the-memory-from-bass)
-- [MIXER FEATURES](#MIXER-FEATURES)
-  - [Enable Mixer](#Enable-Mixer)
-  - [Mixer is Enabled?](#Mixer-is-Enabled?)
-  - [Get current Position of mixer playback](#Get-current-Position-of-mixer-playback)
-- [ENCODER FEATURES](#ENCODER-FEATURES)
-  - [Init encoder](#Init-encoder)
+  - [Info of a channel](#info-of-a-channel)
+  - [Info of a device](#info-of-a-device)
+  - [Free the memory from bass](#free-the-memory-from-bass)
+- [MIXER FEATURES](#mixer-features)
+  - [Enable Mixer](#enable-mixer)
+  - [Mixer is Enabled?](#mixer-is-enabled?)
+  - [Get current Position of mixer playback](#get-current-position-of-mixer-playback)
+- [ENCODER FEATURES](#encoder-features)
+  - [Init encoder](#init-encoder)
   - [get notification from encoder server](#get-notification-from-encoder-server)
   - [mono speaker output](#mono-speaker-output)
   - [splitting channels](#splitting-channels)
@@ -136,6 +136,7 @@ You can see more code examples from the wrapper original creator, [Serkanp](http
 // There is a diversity of parameter accepted by this wrapper, here is a full list of them :
 
 var basslib = getBass({
+  basePath: "libFolderName", //facultative if the lib files are in the base folder of the process. If not set, it's process.cwd which is used.
   silent: true, //there is a few console log that may appear to indicate that everything is going smoothly, if you don't want to see it, you can set it to silent
   generatedFfiFunDeclaration: {
     bass: {
@@ -159,7 +160,7 @@ var basslib = getBass({
 });
 ```
 
-Arguments types : You must choose the most relevants types for each arguments. You can see a list of correspondances [here](https://github.com/Psycokwet/bassaudio-updated-light/blob/master/documentation/identified-types-correspondances.md).
+Arguments types : You must choose the most relevants types for each arguments. You can see a list of correspondances [here](https://github.com/Psycokwet/bassaudio-updated/blob/master/documentation/identified-types-correspondances.md).
 
 Addon id :
 Identification of the addon, two choices :
@@ -171,7 +172,7 @@ Identification of the addon, two choices :
 ### basic capture and play microphone
 
 ```javascript
-var bass = require("bassaudio-updated-light");
+var bass = require("bassaudio-updated");
 var basslib = new bass();
 
 var init = basslib.BASS_Init(
@@ -235,7 +236,7 @@ if (!success) {
 ### basic load and play file
 
 ```javascript
-var bass = require("bassaudio-updated-light");
+var bass = require("bassaudio-updated");
 var basslib = new bass();
 
 //get all sound cards
@@ -649,7 +650,7 @@ var result=basslib.BASS_Encode_SetNotify(enc_chan,function(handle,status,user){
 //lets say if you have 5.1 speaker and want to use each output stereo or mono
 //basically with 5.1 output you can use 6 different output channels.
 //this example shows how to do it
-var bass = require("bassaudio-updated-light");
+var bass = require("bassaudio-updated");
 var basslib = new bass();
 
 //set init to speakers

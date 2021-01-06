@@ -3,17 +3,6 @@
  * Updated by scarboni since 20.10.2020
  */
 
-/**
- *  hsync : int
- *  dword : int
- *  HWND : int used 0 ?
- *  GUID : int used Null?
- *  int : int
- *  bool : bool
- *  float : float
- *  void : void
- */
-
 const chalk = require("chalk");
 const applyShim = require("./shim.js");
 try {
@@ -25,8 +14,8 @@ try {
 const EventEmitter = require("events").EventEmitter;
 
 const path = require("path");
-const Struct = require("ref-struct-napi");
 const ref = require("ref-napi");
+const Struct = require("ref-struct-di")(ref);
 const ffi = require("ffi-napi");
 
 function Bass(options) {
@@ -576,7 +565,7 @@ function Bass(options) {
   this.basslibmixer = null;
   this.basslibencoder = null;
 
-  this.ArrayType = require("ref-array-napi");
+  this.ArrayType = require("ref-array-di")(ref);
 
   this.basslib = ffi.Library(
     new ffi.DynamicLibrary(
@@ -611,7 +600,7 @@ function Bass(options) {
       BASS_ChannelRemoveSync: ["bool", ["int", "int"]],
       BASS_ChannelIsActive: ["int", ["int"]],
       BASS_ChannelSetAttribute: ["bool", ["int", "int", "float"]],
-      BASS_ChannelGetAttribute: ["bool", ["int", "int", floatPTR]],
+      BASS_ChannelGetAttribute: ["bool", ["int", "int", "pointer"]],
       BASS_ChannelSetSync: [
         "int",
         ["int", "int", ref.types.int64, "pointer", ref.types.void],

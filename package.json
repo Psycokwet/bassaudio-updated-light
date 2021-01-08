@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "license": "MIT",
   "author": "Sophie Carboni <socarboni@gmail.com>",
-  "description": "un4seen Bass Audio Library based on ffi bindings",
+  "description": "un4seen Bass Audio Library based on ffi bindings, tested and updated",
   "main": "./package/bass",
   "scripts": {
     "gitacp": "npm run ecf && npm run ecs && npm run ecc && node tools/g.js",

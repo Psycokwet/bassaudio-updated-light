@@ -732,7 +732,7 @@ var avail2 = basslib.BASS_Split_StreamGetAvailable(mixer);
   - Adding documentation
   - Leaving out the features lists of Readme to allow to automatise it's content
   - Changing dependencies to [ref-struct-di](https://www.npmjs.com/package/ref-struct-di), [ref-array-di](https://www.npmjs.com/package/ref-array-di) because ref-napi version that can differe in ref-array-napi and ref-struct-napi from ffi-napi.
-  - Allowing to load non covered addons by adding the proper parameter in the constructor call of the lib. See how to do so in the test [here](https://github.com/Psycokwet/bassaudio-updated-light/blob/master/tests/addFun.test.js). Adding fun works on any platform, but, loading new addon does not work on mac yet. Some addon may not load easily due to other issues that I did not investigate enough, but I believe there is a way to by pass thoses loading issues.
+  - Allowing to load non covered addons by adding the proper parameter in the constructor call of the lib. See how to do so in the test [here](https://github.com/Psycokwet/bassaudio-updated-light/blob/master/tests/addFun.test.js). Adding fun works on any platform, but, in order to add support for new library file for mac, all the dylib must be in the same folder.
 
 **--------------1.X.X------------------**
 
